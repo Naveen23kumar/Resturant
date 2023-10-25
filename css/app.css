@@ -445,11 +445,17 @@ body {
     font-size: 26px;
   }
 
-  review {
+  .review {
     width: 100%;
   }
 
   .customer {
     height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .review {
+    width: 100%;
   }
 }
