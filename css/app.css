@@ -460,6 +460,6 @@ body {
     flex-direction: column;
   }
   .txt {
-    padding: px;
+    padding: 12px;
   }
 }
