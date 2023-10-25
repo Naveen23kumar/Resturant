@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="js/restaurant.js"></script>
+    <!-- <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" /> -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/js/jquery.js"></script>
+    
+    <link rel="icon" href="image/resturant favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f30fac2c61.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- navbar -->
+      <nav  class="container">
+        <div class="logo">
+          <h1>Nav Restro</h1>
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            value=""
+            id="inp"
+            placeholder="Search Here..."
+            onkeyup="myFun()"
+          />
+           
+          <i class="fa-solid fa-magnifying-glass" id="sarchicon"></i>
+        </div>
+        <div class="icon">
+          <i
+            ondblclick="login()"
+            onclick="showLogin()"
+            class="fa-solid fa-user"
+          ></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i
+            ondblclick="nav()"
+            onclick="showNav()"
+            class="fa-sharp fa-solid fa-bars"
+          ></i>
+        </div>
+      </nav>
+</div>
+      <div class="login">
+        <h2>Log In</h2>
+        <input type="text" placeholder="Enter Your Name" />
+        <input type="password" placeholder="Enter Password" />
+        <button>Log In</button>
+      </div>
+      <div class="nav">
+        <p>Home</p>
+        <p>Foods</p>
+        <p>Blogs</p>
+        <p>Customer</p>
+      </div>
+
+      <!-- main page -->
+      <div class="mainPage">
+        <div class="text">
+          <h1>Simple & Tasty Recipes</h1>
+          <p >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quae
+            maiores, molestiae corporis,  <span id="heroContent"> cum excepturi ab repellat odio aliquam
+            provident temporibus ad modi? Vitae reprehenderit vero quae magni
+            officiis dolorum maiores, quod doloremque laudantium voluptatem
+            necessitatibus exercitationem consectetur tenetur quasi modi atque
+            ab accusamus asperiores quas, eveniet ullam repellendus! Ipsum.</span>
+          </p>
+          <button>Explore Now</button>
+        </div>
+        <div class="heroimg">
+          <img src="image/burger (2).png" alt=""  id="Heroimg"/>
+        </div>
+  
+      </div>
+ <hr>
+      <!-- foods cards -->
+
+      <table>
+        <tr>
+          <td>
+            <div class="head">
+              <h1 id="myHeading">Our <span>Popular Dishes</span></h1>
+            </div>
+            <div class="crd">
+              <div class="card">
+                <img src="image/fds (1).jpg" alt="" />
+                <h2>199 Rupees Only</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, illo beatae.
+                </p>
+                <button>Order Now</button>
+              </div>
+
+              <div class="card">
+                <img src="image/fds (2).jpg" alt="" />
+                <h2>99 Rupees Only</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, illo beatae.
+                </p>
+                <button>Order Now</button>
+              </div>
+
+              <div class="card">
+                <img src="image/fds (4).jpg" alt="" />
+                <h2>156 Rupees Only</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, illo beatae.
+                </p>
+                <button>Order Now</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="crd">
+              <div class="card">
+                <img src="image/fds (5).jpg" alt="" />
+                <h2>199 Rupees Only</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, illo beatae.
+                </p>
+                <button>Order Now</button>
+              </div>
+
+              <div class="card">
+                <img src="image/fds (7).jpg" alt="" />
+                <h2>299 Rupees Only</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, illo beatae.
+                </p>
+                <button>Order Now</button>
+              </div>
+
+              <div class="card">
+                <img src="image/fds (8).jpg" alt="" />
+                <h2>199 Rupees Only</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, illo beatae.
+                </p>
+                <button>Order Now</button>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+
+            
+            <div class="head">
+              <h1>Read Our <span>Blogs</span></h1>
+            </div>
+            <div class="crd">
+              <div class="card">
+                <img src="image/fds (6).jpg" alt="" />
+                <h2>Fact About Indian Food</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, illo beatae.
+                </p>
+                <a href="https://www.cozymeal.com/magazine/indian-food"
+                  >Read More</a
+                >
+              </div>
+              <div class="card">
+                <img src="image/fds (4).jpg" alt="" />
+                <h2>Diffrent Types of Burgers</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, illo beatae.
+                </p>
+                <a
+                  href="https://www.finedininglovers.com/article/burger-types-famous-to-make"
+                  >Read More</a
+                >
+              </div>
+              <div class="card">
+                <img src="image/fds (7).jpg" alt="" />
+                <h2>Delicious Checken Recipes</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit, illo beatae.
+                </p>
+                <a
+                  class="aa"
+                  href="https://themodernproper.com/60-best-chicken-breast-recipes"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Costmer Review -->
+
+      <div class="head">
+        <h1>Customer <span>Review</span></h1>
+      </div>
+      <div class="review">
+        <div class="customer">
+          <img src="image/men (1).jpg" alt="" /> <br />
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+            iste nostrum sapiente quas officia possimus quibusdam laudantium
+          </p>
+        </div>
+        <div class="customer">
+          <img src="image/men (2) (1).jpg" alt="" /> <br />
+          <i class="fa-solid fa-star"></i>
+          <i "fa-solid fa-star"></i>
+          <i "fa-solid fa-star"></i>
+          <i "fa-solid fa-star"></i>
+          <i "fa-solid fa-star-half-stroke"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+            iste nostrum sapiente quas officia possimus quibusdam laudantium
+          </p>
+        </div>
+        <div class="customer">
+          <img src="image/men (3) (1).jpg" alt="" /> <br />
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+            iste nostrum sapiente quas officia possimus quibusdam laudantium
+          </p>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="lat" onclick="pre()">Prev</button>
+        <button class="lat" onclick="next()">Next</button>
+      </div>
+      <br />
+      </div>
+
+    <div class="footer">
+      <div class="txt">
+        <h2>About US</h2>
+        <p>
+          Lorem ipsum dolor porro vero <br />
+          earum architecto beatae ipsam.
+        </p>
+        <p>Address</p>
+        <p>Blogs</p>
+        <p>My Account</p>
+        <p>Tearm & Conditions</p>
+      </div>
+      <div class="txt">
+        <h2>Address</h2>
+        <p>Restaurant in Hyderabad</p>
+        <p>+91 9656784589</p>
+        <p>navfamousresto@gmail.com</p>
+        
+      </div>
+      <div class="txt">
+        <h2>Our Food</h2>
+        <p>Breakfast</p>
+        <p>Lunch</p>
+        <p>Dinner</p>
+        <p>Veg/Non-veg</p>
+      </div>
+      <div class="txt">
+        <h2>My Account</h2>
+        <p>My Account</p>
+        <p>Our History</p>
+        <p>Wishlist</p>
+        <p>Returns</p>
+      </div>
+    </div>
+  </body>
+</html>
