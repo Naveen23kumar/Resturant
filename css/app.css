@@ -459,4 +459,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .txt {
+    padding: px;
+  }
 }
