@@ -455,7 +455,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .review {
-    width: 100%;
+  .footer {
+    display: flex;
+    flex-direction: column;
   }
 }
